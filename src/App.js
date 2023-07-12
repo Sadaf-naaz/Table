@@ -2,11 +2,60 @@
   import { useEffect } from "react";
   import './style.css'
 const TableData=[
-    {id:1, fullName:"Noor Khan", age:25, city:"Patna"},
-    {id:2, fullName:"Rapsan Jani", age:26, city:"Noida"},
-    {id:3, fullName:"Monika Singh", age:18, city:"New Delhi"},
-    {id:4, fullName:"Sunil Kumar", age:22, city: "Jaipur"},
-    {id:5, fullName:"Kajol Kumari", age: 21, city: "Chennai"}
+  {
+    "id": 1,
+    "name": "Leanne Graham",
+    "username": "Bret",
+    "email": "Sincere@april.biz",
+  },
+    {
+    "id": 6,
+    "name": "Mrs. Dennis Schulist",
+    "username": "Leopoldo_Corkery",
+    "email": "Karley_Dach@jasper.info",
+    
+    "phone": "1-477-935-8478 x6430",
+    "website": "ola.org",
+    
+    },
+    {
+    "id": 7,
+    "name": "Kurtis Weissnat",
+    "username": "Elwyn.Skiles",
+    "email": "Telly.Hoeger@billy.biz",
+    
+    "phone": "210.067.6132",
+    "website": "elvis.io",
+    
+    },
+    {
+    "id": 8,
+    "name": "Nicholas Runolfsdottir V",
+    "username": "Maxime_Nienow",
+    "email": "Sherwood@rosamond.me",
+    
+    "phone": "586.493.6943 x140",
+    "website": "jacynthe.com",
+   
+    },
+    {
+    "id": 9,
+    "name": "Glenna Reichert",
+    "username": "Delphine",
+    "email": "Chaim_McDermott@dana.io",
+    
+    
+    },
+    {
+    "id": 10,
+    "name": "Clementina DuBuque",
+    "username": "Moriah.Stanton",
+    "email": "Rey.Padberg@karina.biz",
+    
+    "phone": "024-648-3804",
+    "website": "ambrose.net",
+    
+    }
 ]
 
 function App(){
@@ -35,6 +84,9 @@ function App(){
 
 
 // Extracting all unique keys from the JSON data
+// const TableData = JSON.parse(jsonData);
+
+console.log(TableData);
 const allKeys = Array.from(
   new Set(TableData.flatMap((data) => Object.keys(data)))
 );
